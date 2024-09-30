@@ -13,19 +13,6 @@
     border-radius: 23px;
     background-color: rgb(87, 51, 7);
     color: aliceblue;
-
-}
-
-.file-div{
-    background-color: antiquewhite;
-    border: 2px dotted black;
-    height: 15em;
-    width: 26em;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column ;
 }
 
 
