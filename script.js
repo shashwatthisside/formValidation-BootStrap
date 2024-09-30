@@ -15,9 +15,12 @@ input.addEventListener("change", function(){
   file = this.files[0];
   let FileName=file.name;
   console.log(FileName);
+  imageText.innerText=FileName;
   dropArea.classList.add("active");
   showFile(); //calling function
 });
+
+console.log(imageText)
 
 
 //If user Drag File Over DropArea
@@ -51,6 +54,7 @@ function showFile(){
         // UNCOMMENT THIS BELOW LINE. I GOT AN ERROR WHILE UPLOADING THIS POST SO I COMMENTED IT
       let imgTag = `<img src="${fileURL}" alt="image">`; //creating an img tag and passing user selected file source inside src attribute
       dropArea.innerHTML = imgTag; //adding that created img tag inside dropArea container
+      console.log(imgTag)
     }
     fileReader.readAsDataURL(file);
   }else{
@@ -59,6 +63,9 @@ function showFile(){
     dragText.textContent = "Drag & Drop to Upload File";
   }
 }
+
+
+
 
 
 
